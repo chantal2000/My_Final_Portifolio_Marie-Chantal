@@ -382,7 +382,7 @@ body {
 }
 
 .contact .row .content .title {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #fff;
     font-size: 3rem;
     padding-bottom: 2rem;
@@ -417,4 +417,12 @@ body {
 #rd {
     font-size: 20px;
     color: var(--yellow);
+}
+
+#small {
+    text-transform: lowercase;
+}
+
+#white {
+    color: #fff;
 }
