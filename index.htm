@@ -165,14 +165,30 @@
                     </div>
                 </div>
                 <form action=" ">
-                    <input type="text " placeholder="name " class="box ">
-                    <input type="email " placeholder="email " class="box ">
-                    <input type="number " placeholder="Phone number " class="box ">
-                    <input type="text " placeholder="country " class="box ">
+                    <input type="text" placeholder="name" class="box" required>
+                    <input type="email" placeholder="email" class="box " required>
+                    <input type="number" placeholder="Phone number " class="box " required>
+                    <input type="text" placeholder="country" class="box ">
                     <p id="white">Message</p>
-                    <textarea name=" " id="white" cols="30 " rows="10 " class="box-message" placeholder="message" id="white">   
+                    <textarea name="" id="white" cols="30 " rows="10 " class="box-message" placeholder="message" id="white" required>   
                 </textarea>
-                    <button type="submit" class="btn ">Send <i class="fas fa-paper-plane "></i></button>
+                    <button type="Button" value="Send Email" onclick="sendEmail()" class="btn ">Send <i class="fas fa-paper-plane "></i></button>
+                    <script src="https://smtpjs.com/v3/smtp.js"></script>
+                    <!-- <input type="button" value="Send Email" onclick="sendEmail()"> -->
+                    <script>
+                        function sendEmail() {
+                            Email.send({
+                                SecureToken: "<your generated token>",
+                                To: 'recipient@example.com',
+                                From: "sender@example.com",
+                                Subject: "Test Email",
+                                Body: "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+                            }).then(
+                                message => alert("mail sent successfully")
+                            );
+
+                        }
+                    </script>
                     <!-- <input type="submit " name=" " id=" "> -->
                 </form>
             </div>
