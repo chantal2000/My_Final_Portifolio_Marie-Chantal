@@ -254,7 +254,7 @@ body {
     font-size: 2rem;
     color: var(--yellow);
     padding: 1rem 0;
-    font-weight: normal;
+    /* font-weight: normal; */
 }
 
 .about .row .info h3 span {
@@ -265,7 +265,7 @@ body {
 .about {
     /* text-align: center; */
     margin-left: 300px;
-    margin-top: 70px;
+    margin-top: 80rem;
 }
 
 .about .row .counter .box {
@@ -420,9 +420,31 @@ body {
 }
 
 #small {
-    text-transform: lowercase;
+    text-transform: none;
 }
 
 #white {
     color: #fff;
+}
+
+#home {
+    margin-top: 10rem;
+}
+
+#image {
+    width: 220px;
+    height: 140px;
+}
+
+#large {
+    font-size: 18px;
+    text-transform: none;
+}
+
+#rd {
+    font-size: 16px;
+}
+
+p {
+    text-transform: none;
 }
