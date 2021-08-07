@@ -265,7 +265,7 @@ body {
 .about {
     /* text-align: center; */
     margin-left: 300px;
-    /* margin-top: 80rem; */
+    margin-top: 2px;
 }
 
 .about .row .counter .box {
@@ -447,4 +447,35 @@ body {
 
 p {
     text-transform: none;
+}
+
+.box {
+    margin-top: 0;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.small {
+    width: 300px;
+    margin-top: 150px;
+    margin-left: 90px;
+    height: 300px;
+}
+
+#white {
+    color: white;
+    font-size: 20px;
+    margin-top: 150px;
 }
