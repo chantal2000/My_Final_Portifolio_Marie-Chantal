@@ -486,5 +486,6 @@ p {
 #big{
     width: 300px;
     margin-top: 50px;
-    height: 300px;
+    height: 200px;
+    margin-right: 30px;
 }
